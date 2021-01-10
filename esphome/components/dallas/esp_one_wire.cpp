@@ -35,7 +35,7 @@ bool HOT ICACHE_RAM_ATTR ESPOneWire::reset() {
   delayMicroseconds(70);
 
   bool r = !this->pin_->digital_read();
-  delayMicroseconds(410);
+  delayMicroseconds(600);
   return r;
 }
 
